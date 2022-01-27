@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Monthly Salary Prediction</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Hind:300" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+ <div class="login">
+	<h1>Salary Prediction</h1>
+
+    <form action="/predict"method="post">
+    	<input  type="text" name="Workclass" placeholder="Workclass(0-1)" required="required" />
+        <input type="text" name="Education" placeholder="Education" required="required" />
+		<input type="text" name="Middle_age" placeholder="Middle_age eg:1,0" required="required" />
+		<input type="text" name="Hours_Week" placeholder="Hours_Week" required="required" />
+		<input type="text" name="Martial_status" placeholder="Martial_status eg 0,1" required="required" />
+		<input type="text" name="Occupation" placeholder="Occupation 1 ,0" required="required" />
+		<input type="text" name="Relationship_Husband" placeholder="Relationship_Husband eg:0,1" required="required" />
+		<input type="text" name="Relationship_Not_in_family" placeholder="Relationship_Not_in_family Eg:0,1" required="required" />
+    <input type="text" name="Sex" placeholder="Sex Eg:0,1" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+   <br>
+   <br>
+ </div>
+
+</body></html>
